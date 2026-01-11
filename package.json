@@ -1,0 +1,36 @@
+{
+  "name": "realtime-analytics-dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:producers": "nodemon producers/orders.js",
+    "dev:processors": "nodemon processors/revenue.js",
+    "dev:api": "nodemon api/server.js",
+    "dev": "concurrently \"npm run dev:producers\" \"npm run dev:processors\" \"npm run dev:api\"",
+    "start": "node api/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "kafkajs": "^2.2.4",
+    "lucide-react": "^0.515.0",
+    "morgan": "^1.10.0",
+    "pg": "^8.16.1",
+    "recharts": "^2.15.3",
+    "redis": "^5.5.6",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "uuid": "^11.1.0",
+    "ws": "^8.18.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.10"
+  }
+}
