@@ -35,5 +35,5 @@ This project demonstrates scalable backend architecture, queue-based processing,
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/your-username/eventstream-analytics.git
+git clone https://github.com/abhirawatt786/eventstream-analytics.git
 cd eventstream-analytics
